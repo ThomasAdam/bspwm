@@ -1,0 +1,42 @@
+#!/bin/sh
+
+bspc rename_monitor Monitor01 Left
+bspc rename_monitor Monitor02 Right
+
+bspc rename Desktop01 chrome
+bspc rename Desktop02 main
+bspc add media
+
+bspc add_in Right chat
+
+#bspc layout monocle One Two Three Four Five Six Seven Eight Nine Ten
+
+bspc rule Gimp Eight floating
+bspc rule Inkscape Seven floating
+bspc rule fontforge floating
+bspc rule Download floating
+
+bspc rule Chrome send_to chrome
+bspc rule Navigator send_to chrome
+
+bspc set outer_border_width  0
+bspc set main_border_width   3
+bspc set inner_border_width  0
+bspc set window_gap          2
+
+bspc use_monitor Left
+bspc set top_padding         16
+
+bspc set borderless_monocle  false
+bspc set gapless_monocle     true
+bspc set focus_follows_mouse true
+bspc set adaptative_raise    true
+
+bspc set active_border_color blue
+bspc set focused_border_color orange
+bspc set normal_border_color darkgrey
+bspc set presel_border_color magenta
+bspc set urgent_border_color red
+
+bspc set adopt_orphans
+

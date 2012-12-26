@@ -1,0 +1,4 @@
+speckeysd ~/.keys &
+~/bin/simpleswitcher &
+~/bin/bspwm -s /tmp/foofoo > ~/.bspwm.err 2>&1 &
+(while read a; do echo "$a"; done < /tmp/foofoo | ~/bin/panel_bar | bar -p)

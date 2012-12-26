@@ -1,0 +1,7 @@
+Needs:
+
+speckeysd (https://github.com/patrickhaller/speckeysd) --> git://github.com/patrickhaller/speckeysd.git
+bar (https://github.com/LemonBoy/bar) --> git://github.com/LemonBoy/bar.git
+simpleswitcher (https://github.com/seanpringle/simpleswitcher) --> git://github.com/seanpringle/simpleswitcher.git
+
+DON'T FORGET ~/.config/bspwm/autostart -- and see ta/config:config/.config
