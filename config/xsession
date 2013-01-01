@@ -1,4 +1,5 @@
 speckeysd ~/.keys &
 ~/bin/simpleswitcher &
 ~/bin/bspwm -s /tmp/foofoo > ~/.bspwm.err 2>&1 &
+conky | dzen2 -e - -h '16' -w '600' -ta r -xs 1 -bg black -x 1318 &
 (while read a; do echo "$a"; done < /tmp/foofoo | ~/bin/panel_bar | bar -p)
