@@ -60,7 +60,7 @@ Mod4-Alt-Control-9	bspc set window_gap 102
 Mod4-Alt-Control-0	bspc set window_gap 165
 
 Mod4-q	bspc alternate_monitor 
-Mod4-w	bspc cycle_monitor
+Mod4-w	bspc cycle_monitor next
 Mod4-e	bspc toggle_visibility
 Mod4-Shift-a	bspc close
 
