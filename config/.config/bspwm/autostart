@@ -18,6 +18,10 @@ bspc rule Download floating
 
 bspc rule Chrome send_to chrome
 bspc rule Navigator send_to chrome
+bspc rule chat send_to chat
+bspc rule main send_to main
+bspc rule Calculator floating
+bspc rule *Calc* floating
 
 bspc set outer_border_width  0
 bspc set main_border_width   3
@@ -29,7 +33,7 @@ bspc set top_padding         16
 
 bspc set borderless_monocle  false
 bspc set gapless_monocle     true
-bspc set focus_follows_mouse true
+bspc set focus_follows_pointer true
 bspc set adaptative_raise    true
 
 bspc set active_border_color blue
@@ -38,5 +42,4 @@ bspc set normal_border_color darkgrey
 bspc set presel_border_color magenta
 bspc set urgent_border_color red
 
-bspc set adopt_orphans
-
+###bspc adopt_orphans

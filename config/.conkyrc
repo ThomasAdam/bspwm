@@ -1,0 +1,19 @@
+##############################################
+# Settings
+##############################################
+out_to_x no
+background no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+default_color ffaf5f
+draw_graph_borders yes
+#^fg(\#888888)${cpu cpu0}%^fg()   ^fg(\#aaaaaa)${freq_g 1}GHz^fg()   \
+
+TEXT
+^fg(\#00FFC8)CPU: ^fg(\#00B7FF)${cpubar cpu0} (${cpu cpu0}%) ^fg() | \
+^fg(\#00FFC8)MEM: ^fg(\#00B7FF)${mem}^fg() | \
+^fg(\#00FFC8)DSK: ^fg(\#00B7FF)${fs_bar /}^fg() | \
+^fg(\#00FFC8)AVG: ^fg(\#00B7FF)${loadavg 1}^fg() | \
+^fg(\#ffffff)${time %b %d %H:%M}^fg()

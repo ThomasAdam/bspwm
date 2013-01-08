@@ -1,0 +1,152 @@
+#
+# bspwm hotkeys
+#
+
+mod4+alt+Escape
+	bspc quit
+mod4+t
+	bspc cycle_layout
+mod4+r
+	bspc rotate clockwise
+mod4+shift+r
+	bspc rotate counter_clockwise
+mod4+u
+	bspc rotate full_cycle
+mod4+s
+	bspc toggle_floating
+mod4+f
+	bspc toggle_fullscreen
+mod4+x
+	bspc toggle_locked
+mod4+Return
+	bspc alternate
+mod4+Tab
+	bspc alternate_desktop
+
+mod4+comma
+	bspc circulate backward
+mod4+period
+	bspc circulate forward
+
+mod4+c
+	bspc cycle next
+mod4+shift+c
+	bspc cycle prev
+
+mod4+bracketright
+	bspc cycle_desktop next
+mod4+bracketleft
+	bspc cycle_desktop prev
+
+mod4+control+bracketright
+	bspc cycle_desktop next --skip-free
+mod4+control+bracketleft
+	bspc cycle_desktop prev --skip-free
+mod4+control+Left
+	bspc presel left
+mod4+control+Right
+	bspc presel right
+mod4+control+Up
+	bspc presel up
+mod4+control+Down
+	bspc presel down
+
+mod4+BackSpace
+	bspc cancel
+
+mod4+Left
+	bspc focus left
+mod4+Right
+	bspc focus right
+mod4+Up
+	bspc focus up
+mod4+Down
+	bspc focus down
+
+mod4+shift+Left
+	bspc shift left
+mod4+shift+Right
+	bspc shift right
+mod4+shift+Up
+	bspc shift up
+mod4+shift+Down
+	bspc shift down
+
+mod4+alt+Left
+	bspc push left
+mod4+alt+Right
+	bspc push right
+mod4+alt+Up
+	bspc push up
+mod4+alt+Down
+	bspc push down
+mod4+alt+shift+Left
+	bspc pull left
+mod4+alt+shift+Right
+	bspc pull right
+mod4+alt+shift+Up
+	bspc pull up
+mod4+alt+shift+Down
+	bspc pull down
+
+mod4+alt+control+1
+	bspc set window_gap 0
+mod4+alt+control+2
+	bspc set window_gap 3
+mod4+alt+control+4
+	bspc set window_gap 9
+mod4+alt+control+5
+	bspc set window_gap 15
+mod4+alt+control+6
+	bspc set window_gap 24
+mod4+alt+control+7
+	bspc set window_gap 39
+mod4+alt+control+9
+	bspc set window_gap 102
+mod4+alt+control+0
+	bspc set window_gap 165
+
+mod4+q
+	bspc alternate_monitor 
+mod4+w
+	bspc cycle_monitor next
+mod4+e
+	bspc toggle_visibility
+mod4+shift+a
+	bspc close
+
+mod4+F7
+	amixer set Master toggle
+mod4+F8
+	mpc prev
+mod4+F9
+	mpc next
+mod4+F10
+	mpc toggle
+mod4+F11
+	amixer set Master -2
+mod4+F12
+	amixer set Master +2
+
+#
+# Mouse
+#
+mod4+button{1,2,3}
+	bspc grab_pointer {move,focus,resize}
+
+mod4+!button{1,3}
+	bspc {track_pointer,track_pointer} %i %i
+
+mod4+@button{1,3}
+	bspc {ungrab_pointer,ungrab_pointer}
+ 
+
+#
+# wm independent hotkeys
+#
+mod4+Return
+	xterm
+mod4+control+x
+	dmenu_run
+
+# vim: set ft=conf:

@@ -1,8 +1,12 @@
 Needs:
 
-speckeysd (https://github.com/patrickhaller/speckeysd) --> git://github.com/patrickhaller/speckeysd.git
+NO LONGER USING:  speckeysd (https://github.com/patrickhaller/speckeysd) --> git://github.com/patrickhaller/speckeysd.git
+
+sxhkd (https://github.com/baskerville/sxhkd) --> git://github.com/baskerville/sxhkd.git
 bar (https://github.com/LemonBoy/bar) --> git://github.com/LemonBoy/bar.git
 simpleswitcher (https://github.com/seanpringle/simpleswitcher) --> git://github.com/seanpringle/simpleswitcher.git
 
 DON'T FORGET ~/.config/bspwm/autostart -- and see ta/config:config/.config
 DON'T FORGET .conkyrc -- see ta/config:config/.conkyrc
+DON'T FORGET .config/sxhkd
+
