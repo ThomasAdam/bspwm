@@ -13,7 +13,7 @@ mod4+shift+r
 mod4+u
 	bspc rotate full_cycle
 mod4+o
-	bspc send_to_monitor --next
+	bspc drop_to_monitor next
 mod4+s
 	bspc toggle_floating
 mod4+f
